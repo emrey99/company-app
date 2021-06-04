@@ -29,7 +29,7 @@ class EmployeeDB:
     def __delete_employee(self, delete_employee_name):
 
         try:
-            sql = f"DELETE FROM employees WHERE employee_name = '{delete_employee_name}'"
+            sql = f"DELETE FROM employees WHERE employee_name is '{delete_employee_name}'"
 
             mycursor.execute(sql)
 

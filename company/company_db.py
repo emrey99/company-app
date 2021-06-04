@@ -61,7 +61,10 @@ class CompanyDB:
 
         myresult = mycursor.fetchall()
 
-        for x in myresult:
+        if myresult == []:
+            print("There are no family businesses registered")
+        else:
+          for x in myresult:
             print(x)
 
     def get_all_low_class_companies(self):

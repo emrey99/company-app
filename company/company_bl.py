@@ -92,4 +92,3 @@ class CompanyBL:
     def get_department_id(self,department_name):
         self.dep_db.get_department_id(department_name)
 
-

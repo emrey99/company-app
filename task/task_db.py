@@ -52,6 +52,9 @@ class TaskDB:
 
             myresult = mycursor.fetchall()
 
+            if myresult == []:
+                print("There is no such task")
+
             for x in myresult:
                print(x)
 
@@ -66,6 +69,9 @@ class TaskDB:
             mycursor.execute(sql)
 
             myresult = mycursor.fetchall()
+
+            if myresult == []:
+                print("There is no such employee")
 
             for x in myresult:
                 print(x)
